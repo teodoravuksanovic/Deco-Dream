@@ -202,34 +202,39 @@ body {
 
 .strelice {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }
+
 .strelice label {
   position: absolute;
   top: 50%;
-  width: 40px;
-  height: 40px;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
   display: none;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  font-size: 50px;
-  border-radius: 50%;
+  font-size: 28px;
+  line-height: 1;
   background: rgba(126, 126, 126, 0.7);
   color: #151414;
-  cursor: pointer;
   border-radius: 50%;
+  cursor: pointer;
   z-index: 10;
+  pointer-events: auto;
 }
+
 
 
 .strelice .prev {
-    left: 50px; 
-    top: 50%;
+    left: 12px; 
 }
 .strelice .next { 
-    right: 50px; 
-    top: 50%;
+    right: 12px; 
 }
 #s1:checked ~ .strelice .s1,
 #s2:checked ~ .strelice .s2,
@@ -243,20 +248,19 @@ body {
 
 .kruzici {
   position: absolute;
-  bottom: 15px;
+  bottom: 10px;
   left: 50%;
-  display: flex;
-  gap: 10px;
-  z-index: 10;
   transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
 }
 
 .kruzici label {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background: rgba(229, 201, 241, 0.5);
-  cursor: pointer;
 }
 
 #s1:checked ~ .kruzici label[for="s1"],
@@ -601,4 +605,5 @@ footer p {
     color: #e4c8f0;
     font-size: 18px;
 }
+
 
