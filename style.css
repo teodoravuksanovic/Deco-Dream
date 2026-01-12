@@ -10,11 +10,11 @@ html, body {
     width: 100%;
     min-height: 100vh;
     background-color: #e4c8f0;
+    
 }
 
 body {
     display: flex;
-    flex-direction: column;
     background-color: #e4c8f0;
 }
 
@@ -389,8 +389,7 @@ body {
     80%  { transform: translate(-1px, -1px); }
     100% { transform: translate(0px, 0px); }
 }
-
-
+             
 .forma{
     max-width: 600px;
     width: 90%;
@@ -441,6 +440,19 @@ input[type=submit]{
 
 input[type=submit]:hover{
     background-color: #d694fa;
+
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #3e0a5a;
+    margin-top: 40px;
+}
+
+footer p {
+    color: #e4c8f0;
+    font-size: 18px;
 
 }
 
@@ -643,18 +655,4 @@ input[type=submit]:hover{
         height: 6px;
     }
 }
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #3e0a5a;
-    margin-top: 40px;
-}
-
-footer p {
-    color: #e4c8f0;
-    font-size: 18px;
-
-}
-
 
