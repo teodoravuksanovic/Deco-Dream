@@ -474,6 +474,26 @@ input[type=submit]:hover{
     .red {
         flex-direction: column;
     }
+
+    .galerija_slideshow .strelice label {
+        width: 35px;
+        height: 35px;
+        font-size: 28px;
+    }
+
+    .galerija_slideshow .strelice .prev {
+        left: 10%;
+    }
+
+    .galerija_slideshow .strelice .next {
+        right: 10%;
+    }
+
+    .galerija_slideshow .kruzici label {
+        width: 10px;
+        height: 10px;
+    }
+        }
 }
 
 @media (max-width: 768px) {
@@ -519,7 +539,24 @@ input[type=submit]:hover{
 
     .galerija_slideshow {
         height: 45vh;
+
+    .galerija_slideshow {
+        height: 45vh;
     }
+    .galerija_slideshow .strelice label {
+        width: 30px;
+        height: 30px;
+        font-size: 25px;
+    }
+    .galerija_slideshow .strelice .prev {
+        left: 10%;
+    }
+    .galerija_slideshow .strelice .next {
+        right: 10%;
+    }
+    .galerija_slideshow .kruzici label {
+        width: 10px;
+        height: 10px;
 }
 
 
@@ -536,6 +573,25 @@ input[type=submit]:hover{
     textarea {
         width: 100%;
         min-width: 100%;
+    }
+    
+    .galerija_slideshow {
+        height: 30vh;
+    }
+    .galerija_slideshow .strelice label {
+        width: 25px;
+        height: 25px;
+        font-size: 20px;
+    }
+    .galerija_slideshow .strelice .prev {
+        left: 8%;
+    }
+    .galerija_slideshow .strelice .next {
+        right: 8%;
+    }
+    .galerija_slideshow .kruzici label {
+        width: 8px;
+        height: 8px;
     }
 }
 
@@ -589,6 +645,24 @@ input[type=submit]:hover{
     input[type=submit] {
         width: 100%;
     }
+    .galerija_slideshow {
+        height: 28vh;
+    }
+    .galerija_slideshow .strelice label {
+        width: 22px;
+        height: 22px;
+        font-size: 18px;
+    }
+    .galerija_slideshow .strelice .prev {
+        left: 5%;
+    }
+    .galerija_slideshow .strelice .next {
+        right: 5%;
+    }
+    .galerija_slideshow .kruzici label {
+        width: 6px;
+        height: 6px;
+    }
 }
 
 footer {
@@ -601,4 +675,5 @@ footer {
 footer p {
     color: #e4c8f0;
     font-size: 18px;
+
 }
