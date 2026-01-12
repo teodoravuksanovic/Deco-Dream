@@ -35,13 +35,13 @@ body {
 .logo{
     height: 50px;
     width: auto;
+    max-width: 100%;
 }
 
 .meni_linkovi {
     list-style-type: none;
     display: flex;
     gap: 20px;
-    margin-left: auto;
     margin: 0;
     padding: 0;
 }
@@ -118,17 +118,12 @@ body {
 
 .onama_galerija {
     max-width: 1200px;
-    margin-top: 80px;
-    margin-right: auto;
-    margin-bottom: 80px;
-    margin-left: auto;
-
-    padding-left: 20px;
-    padding-right: 20px;
-
+    margin: 40px auto;
+    padding: 0px 20px;
     display: grid;
     grid-template-columns: 1fr 1.3fr;
     gap: 40px;
+    align-items: start;
 }
 
 .info {
@@ -272,19 +267,7 @@ body {
 
 .strelice label:hover, .kruzici label:hover {
   background: rgba(255,255,255,0.7);
-}
-
-
-.onama_galerija {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
-
-    display: grid;
-    grid-template-columns: 1fr 1.3fr;
-    gap: 40px;
-    align-items: start;
-}
+} 
 
 
 .kategorija_usluge {
@@ -444,6 +427,7 @@ input[type=text], select, textarea {
   border-radius: 5px;
   resize: vertical;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 input[type=submit]{
@@ -539,10 +523,8 @@ input[type=submit]:hover{
 
     .galerija_slideshow {
         height: 45vh;
-
-    .galerija_slideshow {
-        height: 45vh;
     }
+
     .galerija_slideshow .strelice label {
         width: 30px;
         height: 30px;
@@ -575,9 +557,6 @@ input[type=submit]:hover{
         min-width: 100%;
     }
     
-    .galerija_slideshow {
-        height: 30vh;
-    }
     .galerija_slideshow .strelice label {
         width: 25px;
         height: 25px;
@@ -677,3 +656,4 @@ footer p {
     font-size: 18px;
 
 }
+
