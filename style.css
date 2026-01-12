@@ -477,7 +477,6 @@ input[type=submit]:hover{
         width: 10px;
         height: 10px;
     }
-        }
 }
 
 @media (max-width: 768px) {
@@ -539,6 +538,7 @@ input[type=submit]:hover{
     .galerija_slideshow .kruzici label {
         width: 10px;
         height: 10px;
+    }
 }
 
 
@@ -656,4 +656,5 @@ footer p {
     font-size: 18px;
 
 }
+
 
