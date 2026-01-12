@@ -475,17 +475,17 @@ footer p {
     }
 
     .galerija_slideshow .strelice label {
-        width: 35px;
-        height: 35px;
-        font-size: 28px;
+        width: 25px;
+        height: 25px;
+        font-size: 20px;
     }
 
     .galerija_slideshow .strelice .prev {
-        left: 10%;
+        left: 8%;
     }
 
     .galerija_slideshow .strelice .next {
-        right: 10%;
+        right: 8%;
     }
 
     .galerija_slideshow .kruzici label {
@@ -658,6 +658,7 @@ footer p {
         height: 6px;
     }
 }
+
 
 
 
