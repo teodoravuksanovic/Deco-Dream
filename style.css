@@ -424,20 +424,32 @@ footer p {
     font-size: 18px;
 }
 
+Media querry 
+
 @media (max-width: 900px) {
-    .hamburger { display: block; }
-    .meni { flex-direction: column; align-items: flex-start; }
-    .meni_linkovi { display: none; flex-direction: column; width: 100%; background-color: #3e0a5a; }
-    #menu-toggle:checked + .hamburger + .meni_linkovi { display: flex; }
-    .meni_linkovi li { width: 100%; text-align: center; }
-    .meni_linkovi li a { display: block; padding: 12px 0; font-size: 24px; }
-    .hero-text h1 { font-size: 6vw; }
-    .hero-text p { font-size: 4vw; }
-    .galerija_slideshow { height: 45vh; }
-    .kruzici label { width: 16px; height: 16px; }
-    .onama_galerija { grid-template-columns: 1fr; }
-    .red { flex-direction: column; gap: 15px; }
-    .galerija_container { padding: 0 15px; }
+
+  .hero-text h1 {
+    font-size: 6vw;
+  }
+
+  .hero-text p {
+    font-size: 4vw;
+  }
+
+
+  .onama_galerija {
+        grid-template-columns: 1fr;
+    }
+
+    .red {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .galerija_container {
+        padding: 0 15px;
+    }
+
     .kolona img:nth-child(1) { animation-duration: 6s; }
     .kolona img:nth-child(2) { animation-duration: 6.5s; }
     .kolona img:nth-child(3) { animation-duration: 6s; }
@@ -447,26 +459,113 @@ footer p {
     .kolona img:nth-child(7) { animation-duration: 6s; }
 }
 
+
 @media (max-width: 600px) {
-    .hero-text h1 { font-size: 7vw; }
-    .hero-text p { font-size: 5vw; }
-    .galerija_slideshow { height: 30vh; }
-    .kruzici label { width: 12px; height: 12px; }
-    .onama_galerija { padding: 0 10px; gap: 20px; }
-    .usluge_kartica { padding: 20px; }
-    .usluge_kartica h3 { font-size: 18px; }
-    .usluge_kartica p { font-size: 14px; }
-    .red { flex-direction: column; }
-    .galerija_container { padding: 0 10px; }
-    .kolona img { animation-duration: 5s; border-width: 3px; }
-    .hamburger { display: block; }
-    .meni { flex-direction: column; align-items: flex-start; }
-    .meni_linkovi { display: none; flex-direction: column; width: 100%; background-color: #3e0a5a; }
-    #menu-toggle:checked + .hamburger + .meni_linkovi { display: flex; }
-    .meni_linkovi li { width: 100%; text-align: center; }
-    .meni_linkovi li a { display: block; padding: 12px 0; font-size: 24px; }
-    label, input[type=text], input[type=submit], select, textarea { width: 100%; min-width: 100%; }
-    .forma { padding: 10px; }
-    input[type=submit] { width: 100%; }
-    .logo { height: 40px; }
-                     }
+  .hamburger {
+    display: block;
+  }
+
+  .meni {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .meni_linkovi {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #3e0a5a;
+  }
+
+  #menu-toggle:checked + .hamburger + .meni_linkovi {
+    display: flex;
+  }
+
+  .meni_linkovi li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .meni_linkovi li a {
+    font-size: 20px;
+    padding: 12px 0;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .hero-text {
+    padding: 60px 15px;
+  }
+
+  .hero-text h1 {
+    font-size: 7vw;
+  }
+
+  .hero-text p {
+    font-size: 5vw;
+  }
+
+  .galerija_slideshow {
+    aspect-ratio: 4 / 3;
+  }
+
+  .strelice label {
+    width: 32px;
+    height: 32px;
+  }
+
+  .strelice label::before {
+    width: 10px;
+    height: 10px;
+  }
+
+  .kruzici {
+    gap: 8px;
+  }
+
+  .kruzici label {
+    width: 14px;
+    height: 14px;
+  }
+
+
+  .usluge_kartica {
+    padding: 20px;
+  }
+
+  .usluge_kartica h3 {
+    font-size: 18px;
+  }
+
+  .usluge_kartica p {
+    font-size: 14px;
+  }
+
+    .red {
+        flex-direction: column;
+    }
+
+    .galerija_container {
+        padding: 0 10px;
+    }
+
+    .kolona img {
+        animation-duration: 5s;
+        border-width: 3px;
+    }
+
+
+  label,
+  input[type=text],
+  select,
+  textarea,
+  input[type=submit] {
+    width: 100%;
+  }
+
+  input[type=submit] {
+    margin-top: 15px;
+  }
+}
