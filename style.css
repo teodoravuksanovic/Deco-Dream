@@ -429,24 +429,6 @@ footer p {
 
 
 @media (max-width: 900px) {
-    .onama_galerija {
-        grid-template-columns: 1fr;
-    }
-
-    .red {
-        flex-direction: column;
-    }
-
-    .hero-text h1 {
-        font-size: 6vw;
-    }
-
-    .hero-text p {
-        font-size: 4vw;
-    }
-}
-
-@media (max-width: 600px) {
 
     .hamburger {
         display: block;
@@ -476,9 +458,49 @@ footer p {
     .meni_linkovi li a {
         display: block;
         padding: 12px 0;
-        font-size: 22px;
+        font-size: 24px;
     }
 
+    .hero-text h1 {
+        font-size: 6vw;
+    }
+
+    .hero-text p {
+        font-size: 4vw;
+    }
+
+    .galerija_slideshow {
+        height: 45vh;
+    }
+
+    .kruzici label {
+        width: 16px;
+        height: 16px;
+    }
+
+    .onama_galerija {
+        grid-template-columns: 1fr;
+    }
+
+    .red {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .galerija_container {
+        padding: 0 15px;
+    }
+
+    .kolona img:nth-child(1) { animation-duration: 6s; }
+    .kolona img:nth-child(2) { animation-duration: 6.5s; }
+    .kolona img:nth-child(3) { animation-duration: 6s; }
+    .kolona img:nth-child(4) { animation-duration: 6.5s; }
+    .kolona img:nth-child(5) { animation-duration: 6s; }
+    .kolona img:nth-child(6) { animation-duration: 6.5s; }
+    .kolona img:nth-child(7) { animation-duration: 6s; }
+}
+
+@media (max-width: 600px) {
     .hero-text h1 {
         font-size: 7vw;
     }
@@ -487,9 +509,18 @@ footer p {
         font-size: 5vw;
     }
 
+    .galerija_slideshow {
+        height: 30vh;
+    }
+
     .kruzici label {
-        width: 16px;
-        height: 16px;
+        width: 12px;
+        height: 12px;
+    }
+
+    .onama_galerija {
+        padding: 0 10px;
+        gap: 20px;
     }
 
     .usluge_kartica {
@@ -504,11 +535,68 @@ footer p {
         font-size: 14px;
     }
 
+    .red {
+        flex-direction: column;
+    }
+
+    .galerija_container {
+        padding: 0 10px;
+    }
+
+    .kolona img {
+        animation-duration: 5s;
+        border-width: 3px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .meni {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .meni_linkovi {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #3e0a5a;
+    }
+
+    #menu-toggle:checked + .hamburger + .meni_linkovi {
+        display: flex;
+    }
+
+    .meni_linkovi li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .meni_linkovi li a {
+        display: block;
+        padding: 12px 0;
+        font-size: 24px;
+    }
+
+    label,
+    input[type=text],
+    input[type=submit],
+    select,
+    textarea {
+        width: 100%;
+        min-width: 100%;
+    }
+
     .forma {
         padding: 10px;
     }
 
     input[type=submit] {
         width: 100%;
+    }
+
+    .logo {
+        height: 40px;
     }
 }
