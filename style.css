@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -18,7 +17,6 @@ body {
     min-height: 100vh;
     background-color: #e4c8f0;
 }
-
 
 .meni{
     position: sticky;
@@ -69,7 +67,6 @@ body {
     display: none; 
 }
 
-
 .hero-image {
     width: 100%;
     height: 80vh;
@@ -118,7 +115,6 @@ body {
     color: #3e0a5a;
 }
 
-
 .info {
     padding: 30px;
     background-color: #614faba7;
@@ -132,7 +128,6 @@ body {
 .info p {
     font-size: 25px;
 }
-
 
 .galerija_slideshow {
     position: relative;
@@ -187,7 +182,6 @@ body {
 #s1:checked ~ .galerija_slides .s7 {
     transform: translateX(-100%);
 }
-
 
 .strelice {
     position: absolute;
@@ -246,7 +240,6 @@ body {
     display: flex;
 }
 
-
 .kruzici {
     position: absolute;
     bottom: 15px;
@@ -278,7 +271,6 @@ body {
 .strelice label:hover, .kruzici label:hover {
     background: rgba(255,255,255,0.7);
 }
-
 
 .onama_galerija {
     max-width: 1200px;
@@ -325,7 +317,6 @@ body {
     color: #555;
 }
 
-
 .galerija_container {
     max-width: 1200px;
     margin: 40px auto;
@@ -354,6 +345,13 @@ body {
     animation-direction: alternate;
 }
 
+.kolona img:nth-child(1) { animation-duration: 8s; animation-delay: 0s; }
+.kolona img:nth-child(2) { animation-duration: 9s; animation-delay: 1s; }
+.kolona img:nth-child(3) { animation-duration: 7.5s; animation-delay: 0.5s; }
+.kolona img:nth-child(4) { animation-duration: 10s; animation-delay: 1.2s; }
+.kolona img:nth-child(5) { animation-duration: 8.5s; animation-delay: 0.8s; }
+.kolona img:nth-child(6) { animation-duration: 9.5s; animation-delay: 0.3s; }
+.kolona img:nth-child(7) { animation-duration: 7.8s; animation-delay: 0.7s; }
 
 @keyframes blagoPomeranje {
     0%   { transform: translate(0px, 0px); }
@@ -363,7 +361,6 @@ body {
     80%  { transform: translate(-1px, -1px); }
     100% { transform: translate(0px, 0px); }
 }
-
 
 .forma{
     max-width: 600px;
@@ -427,70 +424,20 @@ footer p {
     font-size: 18px;
 }
 
-
 @media (max-width: 900px) {
-
-    .hamburger {
-        display: block;
-    }
-
-    .meni {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .meni_linkovi {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #3e0a5a;
-    }
-
-    #menu-toggle:checked + .hamburger + .meni_linkovi {
-        display: flex;
-    }
-
-    .meni_linkovi li {
-        width: 100%;
-        text-align: center;
-    }
-
-    .meni_linkovi li a {
-        display: block;
-        padding: 12px 0;
-        font-size: 24px;
-    }
-
-    .hero-text h1 {
-        font-size: 6vw;
-    }
-
-    .hero-text p {
-        font-size: 4vw;
-    }
-
-    .galerija_slideshow {
-        height: 45vh;
-    }
-
-    .kruzici label {
-        width: 16px;
-        height: 16px;
-    }
-
-    .onama_galerija {
-        grid-template-columns: 1fr;
-    }
-
-    .red {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .galerija_container {
-        padding: 0 15px;
-    }
-
+    .hamburger { display: block; }
+    .meni { flex-direction: column; align-items: flex-start; }
+    .meni_linkovi { display: none; flex-direction: column; width: 100%; background-color: #3e0a5a; }
+    #menu-toggle:checked + .hamburger + .meni_linkovi { display: flex; }
+    .meni_linkovi li { width: 100%; text-align: center; }
+    .meni_linkovi li a { display: block; padding: 12px 0; font-size: 24px; }
+    .hero-text h1 { font-size: 6vw; }
+    .hero-text p { font-size: 4vw; }
+    .galerija_slideshow { height: 45vh; }
+    .kruzici label { width: 16px; height: 16px; }
+    .onama_galerija { grid-template-columns: 1fr; }
+    .red { flex-direction: column; gap: 15px; }
+    .galerija_container { padding: 0 15px; }
     .kolona img:nth-child(1) { animation-duration: 6s; }
     .kolona img:nth-child(2) { animation-duration: 6.5s; }
     .kolona img:nth-child(3) { animation-duration: 6s; }
@@ -501,102 +448,25 @@ footer p {
 }
 
 @media (max-width: 600px) {
-    .hero-text h1 {
-        font-size: 7vw;
-    }
-
-    .hero-text p {
-        font-size: 5vw;
-    }
-
-    .galerija_slideshow {
-        height: 30vh;
-    }
-
-    .kruzici label {
-        width: 12px;
-        height: 12px;
-    }
-
-    .onama_galerija {
-        padding: 0 10px;
-        gap: 20px;
-    }
-
-    .usluge_kartica {
-        padding: 20px;
-    }
-
-    .usluge_kartica h3 {
-        font-size: 18px;
-    }
-
-    .usluge_kartica p {
-        font-size: 14px;
-    }
-
-    .red {
-        flex-direction: column;
-    }
-
-    .galerija_container {
-        padding: 0 10px;
-    }
-
-    .kolona img {
-        animation-duration: 5s;
-        border-width: 3px;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .meni {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .meni_linkovi {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #3e0a5a;
-    }
-
-    #menu-toggle:checked + .hamburger + .meni_linkovi {
-        display: flex;
-    }
-
-    .meni_linkovi li {
-        width: 100%;
-        text-align: center;
-    }
-
-    .meni_linkovi li a {
-        display: block;
-        padding: 12px 0;
-        font-size: 24px;
-    }
-
-    label,
-    input[type=text],
-    input[type=submit],
-    select,
-    textarea {
-        width: 100%;
-        min-width: 100%;
-    }
-
-    .forma {
-        padding: 10px;
-    }
-
-    input[type=submit] {
-        width: 100%;
-    }
-
-    .logo {
-        height: 40px;
-    }
-}
+    .hero-text h1 { font-size: 7vw; }
+    .hero-text p { font-size: 5vw; }
+    .galerija_slideshow { height: 30vh; }
+    .kruzici label { width: 12px; height: 12px; }
+    .onama_galerija { padding: 0 10px; gap: 20px; }
+    .usluge_kartica { padding: 20px; }
+    .usluge_kartica h3 { font-size: 18px; }
+    .usluge_kartica p { font-size: 14px; }
+    .red { flex-direction: column; }
+    .galerija_container { padding: 0 10px; }
+    .kolona img { animation-duration: 5s; border-width: 3px; }
+    .hamburger { display: block; }
+    .meni { flex-direction: column; align-items: flex-start; }
+    .meni_linkovi { display: none; flex-direction: column; width: 100%; background-color: #3e0a5a; }
+    #menu-toggle:checked + .hamburger + .meni_linkovi { display: flex; }
+    .meni_linkovi li { width: 100%; text-align: center; }
+    .meni_linkovi li a { display: block; padding: 12px 0; font-size: 24px; }
+    label, input[type=text], input[type=submit], select, textarea { width: 100%; min-width: 100%; }
+    .forma { padding: 10px; }
+    input[type=submit] { width: 100%; }
+    .logo { height: 40px; }
+                     }
